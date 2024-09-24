@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <!-- Input -->
+          <div>
+            <input type="text"  id="result">
+          </div>   
+
+          <div class="bttns">
+            <input value="AC" type="button"  class="btn" id="clear" onclick="Calculator.ClearData()" ></input>
+            <input value="."  type="button"  class="btn"onclick="Calculator.WriteText(this)" ></input>
+            <input value="0"  type="button" class="btn" onclick="Calculator.WriteText(this)"></input>
+            <input value="/"type="button" class="btn" onclick="Calculator.oprtatorClick('1')"></input>
+            </div>
+
+            <div class="bttns">
+            <input  value="1" type="button"class="btn"onclick="Calculator.WriteText(this)"></input>
+            <input value="2"type="button" class="btn"onclick="Calculator.WriteText(this)"></input>
+            <input value="3"type="button" class="btn"onclick="Calculator.WriteText(this)"></input>
+            <input value="*" type="button" class="btn"onclick="Calculator.oprtatorClick('2')"></input>
+            </div>
+            <div class="bttns">
+            <input value="4"type="button" class="btn"onclick="Calculator.WriteText(this)"></input>
+            <input value="5"type="button" class="btn"onclick="Calculator.WriteText(this)"></input>
+            <input value="6" type="button" class="btn"onclick="Calculator.WriteText(this)"></input>
+            <input value="+"type="button" class="btn"onclick="Calculator.oprtatorClick('3')"></input>
+            </div>
+            <div class="bttns">
+            <input value="7"type="button" class="btn" onclick="Calculator.WriteText(this)"></input>
+            <input value="8"type="button" class="btn"onclick="Calculator.WriteText(this)"></input>
+            <input value="9"type="button" class="btn"onclick="Calculator.WriteText(this)"></input>
+            <input value="-"type="button" class="btn"onclick="Calculator.oprtatorClick('4')"></input>
+          </div>
+
+          <div>
+            <input value="=" id="equal"type="button" class="btn"onclick="Calculator.Calculation()">
+          </div>
+        </div>
+        
+      </section>
+
+      <script src="./assets/index.js"></script>
+</body>
+</html>
